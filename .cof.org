@@ -1,0 +1,52 @@
+#+begin_src emacs-lisp
+(message "test")
+#+end_src
+* Package Manager
+#+BEGIN_SRC emacs-lisp
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
+
+(package-initialize)
+#+END_SRC
+* Splash Screen
+#+BEGIN_SRC emacs-lisp
+(setq inhibit-splash-screen t)
+#+END_SRC 
+* Time & Battery
+** time
+#+BEGIN_SRC emacs-lisp
+(setq display-time-24hr-format t)
+(setq display-time-format "%H:%M - %d %B %Y")
+(display-time-mode 1)
+#+END_SRC
+** battery
+#+BEGIN_SRC emacs-lisp
+(display-battery-mode 1)
+#+END_SRC
+* Term
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "<s-return>") 'term)
+#+END_SRC
+* Tool Bar
+#+BEGIN_SRC emacs-lisp
+(tool-bar-mode -1)
+#+END_SRC
+* W3m
+** key binding
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x w") 'w3m)
+#+END_SRC
+** Browser Function 
+#+BEGIN_SRC emacs-lisp
+(setq browse-url-browser-function 'w3m)
+#+END_SRC
+* PDF-tools
+#+BEGIN_SRC emacs-lisp
+(pdf-tools-install)
+#+END_SRC
+* Wiki
+#+BEGIN_SRC emacs-lisp
+
+#+END_SRC

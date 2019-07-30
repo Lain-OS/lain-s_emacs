@@ -22,6 +22,6 @@
 
 
 
-;;
+;; config
 (org-babel-load-file (expand-file-name "~/.cof.org"))
 

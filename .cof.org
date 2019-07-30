@@ -1,6 +1,4 @@
-#+begin_src emacs-lisp
-(message "test")
-#+end_src
+
 * Package Manager
 #+BEGIN_SRC emacs-lisp
 (require 'package)

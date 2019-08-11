@@ -1,5 +1,7 @@
 
+
 * Package Manager
+MELPA!!!!!
 #+BEGIN_SRC emacs-lisp
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -24,27 +26,41 @@
 (display-battery-mode 1)
 #+END_SRC
 * Term
+Key binding for terminal.
 #+BEGIN_SRC emacs-lisp
 (global-set-key (kbd "<s-return>") 'term)
 #+END_SRC
 * Tool Bar
+The tool bar.
 #+BEGIN_SRC emacs-lisp
 (tool-bar-mode -1)
 #+END_SRC
-* W3m
-** key binding
+* W3M
+W3M is a web browser I use.
+** Key Binding
 #+BEGIN_SRC emacs-lisp
 (global-set-key (kbd "C-x w") 'w3m)
 #+END_SRC
 ** Browser Function 
+Setting W3M at the browser for all things emacs
 #+BEGIN_SRC emacs-lisp
 (setq browse-url-browser-function 'w3m)
 #+END_SRC
+** DuckDuckGo
+I use engine-mode and set a key binding for DuckDuckGo. Feel free to add more.
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x d") 'engine/search-duckduckgo)
+
+(defengine duckduckgo
+  "https://duckduckgo.com/?q=%s")
+#+END_SRC
 * PDF-tools
+Setting up PDF-tools
 #+BEGIN_SRC emacs-lisp
 (pdf-tools-install)
 #+END_SRC
-* Wiki
-#+BEGIN_SRC emacs-lisp
-
-#+END_SRC
+* Video Editing
+GNEVE
+#+BEGIN_src emacs-lisp
+(load "~/.gneve.el")
+#+END_Src

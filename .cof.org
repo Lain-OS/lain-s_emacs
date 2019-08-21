@@ -1,5 +1,4 @@
 
-
 * Package Manager
 MELPA!!!!!
 #+BEGIN_SRC emacs-lisp
@@ -34,7 +33,13 @@ Key binding for terminal.
 The tool bar.
 #+BEGIN_SRC emacs-lisp
 (tool-bar-mode -1)
+(menu-bar-mode -1)
 #+END_SRC
+* Theme
+The Cyberpunk theme
+#+BEGIN_SRC emacs-lisp
+(load-theme 'cyberpunk t)
+#+END_SRC 
 * W3M
 W3M is a web browser I use.
 ** Key Binding
@@ -59,8 +64,15 @@ Setting up PDF-tools
 #+BEGIN_SRC emacs-lisp
 (pdf-tools-install)
 #+END_SRC
+* Music
+I use Bongo with MPV to play my music
+** Keybinding
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x m") 'bongo)
+#+END_SRC
 * Video Editing
 GNEVE
 #+BEGIN_src emacs-lisp
 (load "~/.gneve.el")
 #+END_Src
+

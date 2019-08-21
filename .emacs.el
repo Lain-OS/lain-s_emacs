@@ -5,7 +5,11 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(custom-enabled-themes (quote (tango-dark)))
+'(bongo-enabled-backends (quote (mpv)))
+'(custom-enabled-themes (quote (cyberpunk)))
+ '(custom-safe-themes
+   (quote
+    ("6bc387a588201caf31151205e4e468f382ecc0b888bac98b2b525006f7cb3307" default)))
  '(elfeed-feeds
    (quote
     ( ADD YOUR OWN FEEDS HERE)))

@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
-'(bongo-enabled-backends (quote (mpv)))
+'(bongo-enabled-backends (quote (mplayer)))
 '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
    (quote

@@ -6,7 +6,6 @@ MELPA!!!!!
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
-
 (package-initialize)
 #+END_SRC
 * Splash Screen
@@ -38,7 +37,8 @@ The tool bar.
 * Theme
 The Cyberpunk theme
 #+BEGIN_SRC emacs-lisp
-(load-theme 'cyberpunk t)
+(add-hook 'after-init-hook 
+(lambda () (load-theme 'cyberpunk t)))
 #+END_SRC 
 * W3M
 W3M is a web browser I use.

@@ -65,7 +65,7 @@ Setting up PDF-tools
 (pdf-tools-install)
 #+END_SRC
 * Music
-I use Bongo with MPV to play my music
+I use Bongo with Mplayer to play my music
 ** Keybinding
 #+BEGIN_SRC emacs-lisp
 (global-set-key (kbd "C-x m") 'bongo)

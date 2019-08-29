@@ -11,6 +11,7 @@ MELPA!!!!!
 * Splash Screen
 #+BEGIN_SRC emacs-lisp
 (setq inhibit-splash-screen t)
+(find-file "~/.emacs.png")
 #+END_SRC 
 * Time & Battery
 ** time
@@ -70,9 +71,12 @@ I use Bongo with Mplayer to play my music
 #+BEGIN_SRC emacs-lisp
 (global-set-key (kbd "C-x m") 'bongo)
 #+END_SRC
+
 * Video Editing
 GNEVE
 #+BEGIN_src emacs-lisp
 (load "~/.gneve.el")
 #+END_Src
+
+
 
